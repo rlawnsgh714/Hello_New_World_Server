@@ -8,6 +8,8 @@ app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
 app.use(logger);
 app.use(express.urlencoded({ extended: true }));
-app.get("/", (req, res) => res.send("I'm working"));
+app.use("/", globalRouter);
+app.use("/users", userRouter);
+app.use("/posts", postRouter);
 
 export default app;
