@@ -2,6 +2,15 @@
 
 It is a server repository for Hello New World competition 🔥
 
-/ => home
-/user => information of user
-/user/edit => editing user
+/ --> home
+/join --> join
+/login --> login
+
+/users/:id --> information of user
+/users/edit --> editing user
+/users/logout
+/users/remove
+
+/posts/:id
+/posts/:id/edit
+/posts/upload
